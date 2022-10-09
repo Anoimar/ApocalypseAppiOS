@@ -11,13 +11,13 @@ import SwiftUI
 
 class MarvelService {
     
-    let apiKeyPublic = "your public key"
+    let apiKeyPublic = "9e83a1125c1601e6c450553863acfe1a"
 
     func getApocalypseComics(completion: @escaping ([MarvelResponse.Result]?) -> ()) {
         let timestamp = String(format: "%f", NSDate().timeIntervalSince1970)
         let hash =  "\(HashProvider().createHash(time: timestamp,apiKeyPublic: apiKeyPublic))"
         let apocalypseCharId = "1009156"
-        guard let url = URL(string:  "http://gateway.marvel.com/v1/public/comics?ts=\(timestamp)&apikey=\(apiKeyPublic)&hash=\(hash)&characters=\(apocalypseCharId)")
+        guard let url = URL(string:  "http://gateway.marvel.com/v1/public/comics?ts=\(timestamp)&apikey=\(apiKeyPublic)&hash=\(hash)&characters=\(apocalypseCharId)&dateRange=\(getDateRange())")
         else {
             completion(nil)
             return
@@ -36,5 +36,18 @@ class MarvelService {
                 completion(nil)
             }
         }.resume()
+    }
+    
+    private func getDateRange() -> String {
+        let today = Date()
+        guard let twoYearsAgo = Calendar.current.date(byAdding: .year, value: -2, to: today)
+        else {
+            return ""
+        }
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let todayFormatted = formatter.string(from: today)
+        let twoYearsAgoFormatted = formatter.string(from: twoYearsAgo)
+        return "\(twoYearsAgoFormatted),\(todayFormatted)"
     }
 }

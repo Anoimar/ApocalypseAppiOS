@@ -73,7 +73,7 @@ struct MarvelResponse: Decodable {
 
     struct Thumbnail: Decodable {
         let path: String
-        let thumbnailExtension: String?
+        let `extension`: String?
     }
     
     struct Price: Decodable {

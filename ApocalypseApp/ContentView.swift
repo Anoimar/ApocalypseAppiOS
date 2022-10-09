@@ -16,14 +16,17 @@ struct ContentView: View {
     }
     
     var body: some View {
-        
-        List {
-            ForEach(homeVM.results) { result in
-                Text(result.title)
-                    .padding()
+        VStack() {
+            ScrollView(.horizontal) {
+                HStack(spacing: 32) {
+                    ForEach(homeVM.results) { comic in
+                        ComicViewSmall(comic: comic)
+                    }
+                }
             }
-        }
-     
+            Spacer()
+            Text("test")
+        }.background(Color(red: 48/255, green: 44/255, blue: 114/255))
     }
 }
 
