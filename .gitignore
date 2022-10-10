@@ -1,6 +1,7 @@
 ## User settings
 xcuserdata/
-secret.txt	
+secret.txt
+Config.xcconfig	
 
 ## Xcode 8 and earlier
 *.xcscmblueprint
