@@ -16,7 +16,6 @@
 		6FBAC0A428CE3FEB002A2B6C /* ApocalypseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0A328CE3FEB002A2B6C /* ApocalypseAppTests.swift */; };
 		6FBAC0AE28CE3FEB002A2B6C /* ApocalypseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0AD28CE3FEB002A2B6C /* ApocalypseAppUITests.swift */; };
 		6FBAC0B028CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0AF28CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift */; };
-		6FBAC0C028CE4032002A2B6C /* HashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0BF28CE4032002A2B6C /* HashProvider.swift */; };
 		6FBAC0C228CE429E002A2B6C /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0C128CE429E002A2B6C /* MarvelService.swift */; };
 		6FBAC0C528CE4442002A2B6C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0C428CE4442002A2B6C /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		6FBAC0A928CE3FEB002A2B6C /* ApocalypseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApocalypseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBAC0AD28CE3FEB002A2B6C /* ApocalypseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApocalypseAppUITests.swift; sourceTree = "<group>"; };
 		6FBAC0AF28CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApocalypseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6FBAC0BF28CE4032002A2B6C /* HashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashProvider.swift; sourceTree = "<group>"; };
 		6FBAC0C128CE429E002A2B6C /* MarvelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelService.swift; sourceTree = "<group>"; };
 		6FBAC0C428CE4442002A2B6C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +107,6 @@
 				6FBAC0C328CE4415002A2B6C /* ViewModels */,
 				6FBAC0BE28CE4018002A2B6C /* Services */,
 				6FBAC0BD28CE4012002A2B6C /* Models */,
-				6FBAC0BC28CE4006002A2B6C /* Utils */,
 				6FBAC09228CE3FE9002A2B6C /* ApocalypseAppApp.swift */,
 				6FBAC09428CE3FE9002A2B6C /* ContentView.swift */,
 				6FBAC09628CE3FEB002A2B6C /* Assets.xcassets */,
@@ -142,14 +139,6 @@
 				6FBAC0AF28CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift */,
 			);
 			path = ApocalypseAppUITests;
-			sourceTree = "<group>";
-		};
-		6FBAC0BC28CE4006002A2B6C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				6FBAC0BF28CE4032002A2B6C /* HashProvider.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		6FBAC0BD28CE4012002A2B6C /* Models */ = {
@@ -312,7 +301,6 @@
 				6F123FFA28F2F22E00E20D64 /* ComicViewSmall.swift in Sources */,
 				6FBAC0C228CE429E002A2B6C /* MarvelService.swift in Sources */,
 				6FBAC0C528CE4442002A2B6C /* HomeViewModel.swift in Sources */,
-				6FBAC0C028CE4032002A2B6C /* HashProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
