@@ -18,7 +18,6 @@
 		6FBAC0B028CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0AF28CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift */; };
 		6FBAC0C228CE429E002A2B6C /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0C128CE429E002A2B6C /* MarvelService.swift */; };
 		6FBAC0C528CE4442002A2B6C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0C428CE4442002A2B6C /* HomeViewModel.swift */; };
-		6FD7EB1D28F43B490009677F /* secret.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FD7EB1C28F43B490009677F /* secret.txt */; };
 		6FD7EB2728F456980009677F /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6FD7EB2628F456980009677F /* Config.xcconfig */; };
 		6FD7EB2C28F457A10009677F /* HashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD7EB2B28F457A10009677F /* HashProvider.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		6FBAC0AF28CE3FEB002A2B6C /* ApocalypseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApocalypseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FBAC0C128CE429E002A2B6C /* MarvelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelService.swift; sourceTree = "<group>"; };
 		6FBAC0C428CE4442002A2B6C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		6FD7EB1C28F43B490009677F /* secret.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = secret.txt; sourceTree = "<group>"; };
 		6FD7EB2628F456980009677F /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		6FD7EB2B28F457A10009677F /* HashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +118,6 @@
 				6FBAC09628CE3FEB002A2B6C /* Assets.xcassets */,
 				6FBAC09828CE3FEB002A2B6C /* Preview Content */,
 				6F123FF928F2F22E00E20D64 /* ComicViewSmall.swift */,
-				6FD7EB1C28F43B490009677F /* secret.txt */,
 			);
 			path = ApocalypseApp;
 			sourceTree = "<group>";
@@ -288,7 +285,6 @@
 			files = (
 				6FD7EB2728F456980009677F /* Config.xcconfig in Resources */,
 				6FBAC09A28CE3FEB002A2B6C /* Preview Assets.xcassets in Resources */,
-				6FD7EB1D28F43B490009677F /* secret.txt in Resources */,
 				6FBAC09728CE3FEB002A2B6C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
