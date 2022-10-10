@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F123FFA28F2F22E00E20D64 /* ComicViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F123FF928F2F22E00E20D64 /* ComicViewSmall.swift */; };
+		6F53DA4E28F42D680043611F /* HashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53DA4D28F42D680043611F /* HashProvider.swift */; };
 		6F80E41928E0A66E000B91A2 /* MarvelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F80E41828E0A66E000B91A2 /* MarvelResponse.swift */; };
 		6FBAC09328CE3FE9002A2B6C /* ApocalypseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC09228CE3FE9002A2B6C /* ApocalypseAppApp.swift */; };
 		6FBAC09528CE3FE9002A2B6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC09428CE3FE9002A2B6C /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		6F123FF928F2F22E00E20D64 /* ComicViewSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewSmall.swift; sourceTree = "<group>"; };
+		6F53DA4D28F42D680043611F /* HashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashProvider.swift; sourceTree = "<group>"; };
 		6F80E41828E0A66E000B91A2 /* MarvelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelResponse.swift; sourceTree = "<group>"; };
 		6F80E41A28E0B2B3000B91A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6FBAC08F28CE3FE9002A2B6C /* ApocalypseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApocalypseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F53DA4C28F42D4F0043611F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6F53DA4D28F42D680043611F /* HashProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		6FBAC08628CE3FE9002A2B6C = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		6FBAC09128CE3FE9002A2B6C /* ApocalypseApp */ = {
 			isa = PBXGroup;
 			children = (
+				6F53DA4C28F42D4F0043611F /* Utils */,
 				6F80E41A28E0B2B3000B91A2 /* Info.plist */,
 				6FBAC0C328CE4415002A2B6C /* ViewModels */,
 				6FBAC0BE28CE4018002A2B6C /* Services */,
@@ -296,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FBAC09528CE3FE9002A2B6C /* ContentView.swift in Sources */,
+				6F53DA4E28F42D680043611F /* HashProvider.swift in Sources */,
 				6F80E41928E0A66E000B91A2 /* MarvelResponse.swift in Sources */,
 				6FBAC09328CE3FE9002A2B6C /* ApocalypseAppApp.swift in Sources */,
 				6F123FFA28F2F22E00E20D64 /* ComicViewSmall.swift in Sources */,
