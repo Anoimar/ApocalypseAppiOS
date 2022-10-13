@@ -11,7 +11,7 @@ import Foundation
 class HomeViewModel: ObservableObject {
     
     private var marvelService: MarvelService
-    @Published var results = [MarvelResponse.Result]()
+    @Published var comics = [Comic]()
     
     init() {
         self.marvelService = MarvelService()
@@ -21,8 +21,9 @@ class HomeViewModel: ObservableObject {
     func fetchResults() {
         self.marvelService.getApocalypseComics(completion: { results in
             if let results = results {
+                let comics = results.map{ Comic(result: $0)}
                 DispatchQueue.main.async {
-                    self.results = results
+                    self.comics = comics
                 }
             }
         })

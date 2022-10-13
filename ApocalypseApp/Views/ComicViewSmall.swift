@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ComicViewSmall: View {
-    let comic: MarvelResponse.Result
+    let comic: Comic
     var body: some View {
         VStack(alignment: .center) {
-            AsyncImage(url: URL(string: getImageUrl()), scale: 2) { cover in
+            AsyncImage(url: URL(string: comic.imageUrl), scale: 2) { cover in
                 cover
                   .aspectRatio(contentMode: .fill)
             } placeholder: {
@@ -20,9 +20,11 @@ struct ComicViewSmall: View {
             Text(comic.title).foregroundColor(Color.orange)
         }.padding()
     }
-    
-    private func getImageUrl() -> String {
-        let image = comic.thumbnail
-        return "\(image?.path ?? "").\(image?.extension ?? "")"
+}
+
+struct ComicViewSmall_Previews: PreviewProvider {
+    static var previews: some View {
+        let previewComic = Comic(id: 1, title: "Apocalypse THE END #1",imageUrl: "https://i.annihil.us/u/prod/marvel/i/mg/7/f0/601afd400bb22/portrait_uncanny.jpg")
+        ComicViewSmall(comic: previewComic)
     }
 }
