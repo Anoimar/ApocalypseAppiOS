@@ -63,12 +63,12 @@ struct MarvelResponse: Decodable {
         let returned: Int
     }
 
-    struct Item: Decodable {
+    struct Item: Decodable, Identifiable {
+        let id = UUID()
         let resourceURI: String
         let name: String
         let role: String?
         let type: String?
-
     }
 
     struct Thumbnail: Decodable {

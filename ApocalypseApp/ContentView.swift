@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
-        HomeScreen()
+        NavigationView {
+            HomeScreen().navigationBarTitle("Apocalypse Last Sightings",displayMode: .inline)
+        }
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -24,7 +24,7 @@ struct ComicViewSmall: View {
 
 struct ComicViewSmall_Previews: PreviewProvider {
     static var previews: some View {
-        let previewComic = Comic(id: 1, title: "Apocalypse THE END #1",imageUrl: "https://i.annihil.us/u/prod/marvel/i/mg/7/f0/601afd400bb22/portrait_uncanny.jpg")
+        let previewComic = Comic(id: 1, title: "Apocalypse THE END #1",imageUrl: "https://i.annihil.us/u/prod/marvel/i/mg/7/f0/601afd400bb22/portrait_uncanny.jpg", creators: [MarvelResponse.Item]())
         ComicViewSmall(comic: previewComic)
     }
 }

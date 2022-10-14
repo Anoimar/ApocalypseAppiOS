@@ -11,13 +11,14 @@ struct HomeScreen: View {
     
     @ObservedObject var homeVM = HomeViewModel()
     
-    
     var body: some View {
         VStack() {
             ScrollView(.horizontal) {
                 HStack(spacing: 32) {
                     ForEach(homeVM.comics) { comic in
-                        ComicViewSmall(comic: comic)
+                        NavigationLink(destination: ComicDetailScreen(comic: comic)){
+                            ComicViewSmall(comic: comic)
+                        }
                     }
                 }
             }
