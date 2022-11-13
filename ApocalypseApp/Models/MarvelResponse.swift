@@ -69,6 +69,8 @@ struct MarvelResponse: Decodable {
         let name: String
         let role: String?
         let type: String?
+        
+        private enum CodingKeys: String, CodingKey { case resourceURI, name, role,type }
     }
 
     struct Thumbnail: Decodable {

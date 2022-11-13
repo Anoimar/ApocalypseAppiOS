@@ -39,6 +39,7 @@ struct ComicDetailScreen: View {
                                 CreatorView(creator: creator)
                             }
                         }
+                        Text(comic.description ?? "test")
                     }
                 }
             }.background(darkPurpleColor).navigationBarTitle(comic.title, displayMode: .inline)

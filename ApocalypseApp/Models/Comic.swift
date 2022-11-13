@@ -11,6 +11,7 @@ struct Comic: Identifiable {
     var id: Int
     var imageUrl: String
     var title: String
+    var description: String?
     var creators: [MarvelResponse.Item]
     
     init(result: MarvelResponse.Result) {
@@ -18,6 +19,7 @@ struct Comic: Identifiable {
         title = result.title
         imageUrl = "\(result.thumbnail?.path ?? "").\(result.thumbnail?.extension ?? "")"
         creators = result.creators.items
+        description = result.resultDescription
     }
     
     init(id: Int, title: String, imageUrl: String, creators: [MarvelResponse.Item]) {
